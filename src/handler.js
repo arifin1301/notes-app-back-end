@@ -114,7 +114,7 @@ const deleteNodeByIdHandler = (request, h) => {
 
     const response = h.response({
         status: 'fail',
-        message: 'Catatan tidak ditemukan'
+        message: 'Catatan gagal dihapus, id tidak ditemukan'
     })
     response.code(404)
     return response
